@@ -1,0 +1,8 @@
+.card {
+
+}
+
+.card:hover,
+.card:focus {
+  translate: 0 -5px;
+}
