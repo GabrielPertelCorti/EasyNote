@@ -1,0 +1,37 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente azul (substituindo o laranja) -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"></stop>
+      <stop offset="100%" stop-color="#2563EB"></stop>
+    </linearGradient>
+
+    <!-- Gradiente da dobra -->
+    <linearGradient id="fold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"></stop>
+      <stop offset="100%" stop-color="#38BDF8"></stop>
+    </linearGradient>
+
+    <!-- Sombra suave -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.25"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Fundo arredondado -->
+  <rect x="16" y="16" width="224" height="224" rx="48" fill="url(#bg)" filter="url(#shadow)"></rect>
+
+  <!-- Base (efeito de profundidade) -->
+  <rect x="16" y="180" width="224" height="60" rx="0 0 48 48" fill="#1E40AF" opacity="0.4"></rect>
+
+  <!-- Dobra da folha -->
+  <path d="M176 16 Q240 16 240 80 L176 16 Z" fill="url(#fold)"></path>
+
+  <!-- Letra N (grossa e suave) -->
+  <path d="M80 180 V80 Q80 60 100 60 Q110 60 118 70 L150 120 V80 Q150 60 170 60 Q190 60 190 80 V180 Q190 200 170 200 Q160 200 152 190 L120 140 V180 Q120 200 100 200 Q80 200 80 180 Z" fill="#F8FAFC"></path>
+
+  <!-- Espiral lateral -->
+  <rect x="60" y="90" width="18" height="10" rx="5" fill="#3B82F6"></rect>
+  <rect x="60" y="120" width="18" height="10" rx="5" fill="#3B82F6"></rect>
+  <rect x="60" y="150" width="18" height="10" rx="5" fill="#3B82F6"></rect>
+</svg>
