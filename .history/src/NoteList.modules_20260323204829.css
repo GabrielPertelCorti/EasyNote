@@ -1,9 +1,0 @@
-.card {
-
-}
-
-.card:hover,
-.card:focus {
-  translate: 0 -5px;
-  box-shadow: 0 5px;
-}
